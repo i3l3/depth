@@ -13,5 +13,5 @@ for i in range(marker_amount):
         continue
     marker_ids.append(marker_id)
     marker_img = aruco.generateImageMarker(dictionary, marker_id, marker_size)
-    cv2.imwrite(f"aruco_{i}_{marker_id}.png", marker_img)
-    print(f"aruco_{i}_{marker_id}.png saved")
+    cv2.imwrite(f"markers/aruco_{i}_{marker_id}.png", marker_img)
+    print(f"markers/aruco_{i}_{marker_id}.png saved")

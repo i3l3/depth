@@ -276,4 +276,4 @@ pip-selfcheck.json
 # End of https://www.toptal.com/developers/gitignore/api/venv,python,pycharm+all
 
 models/*.pt
-aruco_*.png
+markers/aruco_*.png
