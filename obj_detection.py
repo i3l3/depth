@@ -24,7 +24,7 @@ def show_depth(event, x, y, _, param):
     if event == cv2.EVENT_MOUSEMOVE:
         mouse_x, mouse_y = x, y
         depth_value = param[y, x]
-        real_depth_value = a * depth_value + b
+        real_depth_value = 1 / (a * depth_value + b)
 
 cv2.namedWindow("depth")
 
